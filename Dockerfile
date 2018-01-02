@@ -1,8 +1,7 @@
 FROM python:2-alpine
 LABEL maintainer="Freeletics GmbH <operations@freeletics.com>"
 
-RUN pip install --upgrade pip
-RUN pip install awscli
+RUN pip install awscli==1.14.17
 RUN apk add --update bash gawk
 RUN adduser -D -u 500 core 
 WORKDIR /
