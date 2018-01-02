@@ -8,5 +8,5 @@ WORKDIR /
 
 ENV IAM_GROUPS=""
 USER core
-ADD keys.sh /keys.sh
+COPY keys.sh /keys.sh
 CMD ["/keys.sh"]
