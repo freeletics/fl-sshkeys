@@ -27,6 +27,7 @@ function run_get_keys () {
   done
   /usr/bin/update-ssh-keys
 }
+
 echo "$(date) Retrieve keys and apply changes if needed"
 run_get_keys
 if [[ -z ${RUNONCE+x} ]]; then
